@@ -67,10 +67,7 @@
                 padding: .5em;
             }
         </style>
-        <script>
-            document.createElement('article');
-            document.createElement('footer');
-        </script>
+
 
         <!-- scripts used for screen-sharing -->
         <script src="https://www.webrtc-experiment.com/socket.io.js"> </script>
@@ -83,9 +80,7 @@
     </head>
 
     <body>
-        <article>
-            <!-- just copy this <section> and next script -->
-            <section class="experiment">
+    <section class="experiment">
                 <section class="hide-after-join" style="text-align: center;">                    
                     <input type="text" id="room-name" placeholder="Enter " style="width: 80%; text-align: center; display: none;">
                     <button id="share-screen" class="setup">Share Your Screen</button>
@@ -275,40 +270,5 @@
                     uniqueToken.style.display = 'block';
                 }
             </script>
-
-            <section class="experiment">
-                <h2 id="advantages">
-                    <a href="#advantages">Advantages</a>
-                </h2>
-                <ol>
-                    <li>As of 2019, this demo is now 100% Plugin-free!! Believe that! No Chrome extension! No Firefox addon!</li>
-                    <li>Share screen from Chrome, Firefox or Edge. Safari support is coming soon.</li>
-                    <li>
-                        You can open private i.e. secure rooms:<br /><br />
-                        <ol>
-                            <li>Use hashes to open private rooms: <strong>#private-room</strong></li>
-                            <li>Use URL parameters to open private rooms: <strong>?private=room</strong></li>
-                        </ol>
-                    </li>
-                    <li>Upto 10 people can view your screen. System restrictions (CPU/RAM) still applies.</li>
-                </ol>
-            </section>
-
-            <section class="experiment"><small id="send-message"></small></section>
-
-        </article>
-
-        <a href="https://github.com/muaz-khan/WebRTC-Experiment/tree/master/Pluginfree-Screen-Sharing" class="fork-left"></a>
-
-        <footer>
-            <p>
-                <a href="https://www.webrtc-experiment.com/">WebRTC Experiments</a>
-                © <a href="https://plus.google.com/+MuazKhan" rel="author" target="_blank">Muaz Khan</a>
-                <a href="mailto:muazkh@gmail.com" target="_blank">muazkh@gmail.com</a>
-            </p>
-        </footer>
-
-        <!-- commits.js is useless for you! -->
-        <script src="https://www.webrtc-experiment.com/commits.js" async> </script>
     </body>
 </html>
